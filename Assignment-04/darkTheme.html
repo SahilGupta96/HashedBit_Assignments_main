@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .day {
+        background-color: white;
+        color: black;
+      }
+
+      .night {
+        background-color: black;
+        color: gold;
+      }
+
+      .button_night {
+        background-color: darkblue;
+        color: white;
+      }
+
+      .button_day {
+        background-color: white;
+        color: black;
+      }
+
+      html,
+      body {
+        margin: 0px;
+        height: 100%;
+      }
+
+      #app {
+        height: 100%;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Task Statement - 
+
+Have you seen the different themes of the editors? There's a light theme, and there's a dark theme. We will be building today a toggle theme functionality where we will click a button to change the theme from dark to light.
+The HTML and CSS are already provided to you.
+
+The p element should have the text I am a HashedBit student, ready to become an awesome full stack developer
+
+The main div should have id="app" and class="day"
+
+The buttonshould have id="swap" and class="button_day"
+
+Write the swapTheme function to change the class of the div to night and the class of the button to button_night. Calling the swapTheme function again should change the class of the div back to day and the class of the button back to button_day
+
+Cliking the button should call the swapTheme function.
+
+
+
+Note: Do not change the CSS code -->
+
+    <div id="app" class="day">
+      <p>
+       Lorem ipsum, dolor sit amet c Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, saepe. Voluptate, necessitatibus, ullam laudantium asperiores rerum repellat illum suscipit voluptas, quas inventore sapiente dolore expedita saepe ipsam beatae ad in voluptatem! Pariatur veniam enim, aut aliquam tempora deleniti vel? Praesentium eveniet beatae harum ipsum eius facere dolorum, quibusdam quod commodi, aspernatur cum nisi omnis suscipit. Mollitia ex voluptatem voluptas expedita rem aliquam nostrum veritatis vero ratione corporis voluptatum, hic eius nemo, adipisci in repellat sint fuga excepturi! Accusamus rem incidunt dolores id consequuntur, eaque quibusdam autem. Deserunt, laboriosam dolores? Amet possimus blanditiis veniam nisi in doloremque fugit maiores voluptatum alias vero vitae quaerat enim quidem quos quasi, molestiae corporis aliquam odio aspernatur sunt deserunt soluta! Ab unde doloremque esse modi. Nam quam, deleniti temporibus quaerat, velit sunt omnis doloribus, reprehenderit illo sapiente quibusdam ducimus! Laboriosam quam reprehenderit molestias maiores ipsam consequuntur ipsum rerum aperiam necessitatibus sit pariatur, facere beatae tenetur impedit dicta quidem, explicabo animi libero sint fugit tempora! Repudiandae vel quis porro. Eum eveniet ullam facilis, laudantium sunt magnam dolore veritatis impedit accusamus culpa! Rem aliquid voluptas, voluptate incidunt officia vel animi repellat sint ipsam sequi facilis distinctio accusamus ipsum aspernatur dicta nostrum libero doloribus obcaecati impedit vitae. Magnam quam impedit ducimus incidunt quas! Officiis libero dolor labore alias, excepturi natus, distinctio nulla delectus sapiente cumque repellat nam molestias ducimus praesentium ea placeat tenetur iste voluptatum laboriosam corrupti a reiciendis dolore deleniti. Sit amet possimus, totam quam veniam, perferendis deserunt quod inventore numquam natus autem quis ducimus at, adipisci omnis est esse ipsum facilis. Doloribus inventore earum rerum illum, suscipit hic sunt non, omnis provident quae ipsa vitae dolore nesciunt maiores. Ad vero distinctio quis dignissimos vel labore reiciendis veritatis, nesciunt amet asperiores porro ab corrupti necessitatibus. Ad quae dicta velit totam necessitatibus quasi sit cumque aperiam voluptatem ex culpa odit, in itaque nostrum, aut recusandae beatae laudantium voluptate esse veritatis vel obcaecati, ab possimus! Unde, veritatis! Possimus explicabo dolore reiciendis quia obcaecati sunt error deleniti eius neque, pariatur voluptatem, illum animi, dolores magnam excepturi? Libero id quibusdam aliquam ab doloremque dolore saepe rem unde ea iusto! Quos velit fuga unde architecto rem distinctio alias accusantium voluptatem magni doloremque amet reiciendis laudantium quia debitis aspernatur aliquid, labore quo perferendis explicabo adipisci suscipit, aut ipsum deserunt libero. Earum, possimus? Quos pariatur ducimus voluptatibus, a animi quidem labore ea asperiores aperiam. Quaerat esse quod odio consectetur harum distinctio dolorum voluptatibus suscipit pariatur! Placeat, praesentium enim quia doloremque dolorum atque! Recusandae perferendis cum harum veniam molestias suscipit eligendi ipsum sunt unde dolore ullam qui dolorum quaerat ex commodi ea sed asperiores, facilis hic vel autem sequi voluptatum in optio! Fugiat eos et nostrum, officia, consequuntur rem ipsam dolorem magnam excepturi accusantium maiores aut, nisi mollitia nam eum magni eveniet repudiandae quod sed pariatur? Illum, distinctio odit delectus at esse placeat repudiandae ratione velit quia eveniet atque asperiores. Aspernatur nulla maiores dolores repellat, aliquam ut nam a laborum consequuntur dolor ratione, nihil similique, fugiat illum porro. Magni, ut natus. Debitis quisquam consequuntur aperiam.2 onsectetur adipisicing elit. Perferendis laborum deleniti cumque. Ullam iure molestias suscipit quae, maiores dolor blanditiis nesciunt dolorem nostrum facere, cumque doloremque, commodi excepturi sit quos.
+      </p>
+      <button onclick="swapTheme()" id="swap" class="button_day">
+        Toggle theme
+      </button>
+    </div>
+    <script>
+      function swapTheme() {
+        document.getElementById("app").classList.toggle("night");
+        let btn = document.getElementById("swap");
+        if (btn.classList.contains("button_day")) {
+          btn.classList.remove("button_day");
+          btn.classList.add("button_night");
+        } else {
+          btn.classList.remove("button_night");
+          btn.classList.add("button_day");
+        }
+      }
+    </script>
+  </body>
+</html>
